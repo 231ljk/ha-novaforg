@@ -1,0 +1,25 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to a NovaForge device",
+        "description": "Enter the IP address of a device running NovaForge firmware.",
+        "data": {
+          "host": "[%key:common::config_flow::data::host%]",
+          "port": "[%key:common::config_flow::data::port%]"
+        }
+      },
+      "zeroconf_confirm": {
+        "title": "Discovered NovaForge device",
+        "description": "Found **{name}** (`{id}`) on your network. Do you want to add it?"
+      }
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]"
+    },
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]",
+      "no_device_id": "The device did not report a NovaForge hardware ID."
+    }
+  }
+}
