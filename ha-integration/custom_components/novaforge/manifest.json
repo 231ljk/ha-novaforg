@@ -1,0 +1,12 @@
+{
+  "domain": "novaforge",
+  "name": "NovaForge",
+  "codeowners": ["@231ljk"],
+  "config_flow": true,
+  "documentation": "https://github.com/231ljk/ha-novaforg",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/231ljk/ha-novaforg/issues",
+  "version": "1.0.0",
+  "zeroconf": ["_novaforge._tcp.local."]
+}
